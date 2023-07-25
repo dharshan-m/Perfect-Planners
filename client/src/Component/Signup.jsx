@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import Nav from './Nav';
 
 import './Style/Signup.css'
 
@@ -66,13 +65,6 @@ function Signup() {
     return repassword === password;
   }
 
-  const SignUpData = [{
-    name :fname,
-    lname :lname,
-    email :email,
-    password :password
-  }]
-
 
 
 
@@ -86,39 +78,23 @@ function Signup() {
           if (validatePassword(password)) {
             if (validateRePassword(repassword)) {
               console.log(fname, lname, email, password, repassword);
-              navigate('/');
+              navigate('/login');
               
 
-              localStorage.setItem('Data',JSON.stringify(SignUpData));
-
-
-
-              let existingData = localStorage.getItem("Data");
-
-              const signupData = existingData ? JSON.parse(existingData) : [];
-
-
-              signupData.push(SignUpData);
-              localStorage.setItem('Data',JSON.stringify(signupData));
+            
 
               
 
-//               var existingData = localStorage.getItem("signupData");
-// var signupDataArray = existingData ? JSON.parse(existingData) : [];
-
-
-              
-              // localStorage.setItem('signupData', JSON.stringify(SignUpData));
-              
-
+//             
 
             }
             else {
-              alert('password not matched!')
+              // alert('password not matched!');
+              document.getElementById('signup_error').innerHTML = 'Password did not match';
             }
           }
           else {
-            alert('password must be atleast 8 characters');
+            // alert('password must be atleast 8 characters');
             document.getElementById('signup_error').innerHTML = 'password must be atleast 8 characters';
           }
 
@@ -131,7 +107,7 @@ function Signup() {
         }
       }
       else {
-        document.getElementById('signup_error').innerHTML = 'Enter the proper  name';
+        document.getElementById('signup_error').innerHTML = 'Enter the proper name';
 
       }
 
@@ -139,38 +115,45 @@ function Signup() {
 
     }
     else {
-      document.getElementById('signup_error').innerHTML = 'Enter the proper  name';
+      document.getElementById('signup_error').innerHTML = 'Enter the proper name';
 
     }
   }
 
   return (
     <div className='signup_container'>
-      <Nav/>
+    
 
 
       <form action="" onSubmit={handleSignup} className='signup_form'>
-        <span className="signup_log">SIGNUP</span>
+        <span className="signup_log" >SIGNUP</span>
+        <div className='firstlogo'>
+          <img className='classmainlogo' src="https://document-export.canva.com/W2I7I/DAFe7hW2I7I/21/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20230723%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230723T132516Z&X-Amz-Expires=15668&X-Amz-Signature=81e31c0c8657011553b3e1e1b1069ddcfec726705fe1d95da1be023619b9eee8&X-Amz-SignedHeaders=host&response-expires=Sun%2C%2023%20Jul%202023%2017%3A46%3A24%20GMT" alt="logo" />
+        </div>
+        {/* <div className='divimage2main'>
+          <img src="https://fr.dreamstime.com/file-d-attente-%C3%A0-l-illustration-plate-vecteur-r%C3%A9ception-les-gens-qui-attendent-ligne-des-personnages-dessins-anim%C3%A9s-image168509664" alt="" />
+        </div> */}
+        <div className='divsignup'>
+          <h3 className='classignup'>Join our community and unlock a world of possibilities! SignUp today to get started with a personalized account.</h3>
+        </div>
 
         {/* <label htmlFor="user_firstName">First Name :</label> */}
-        <input type="text" className='user_firstName' id='user_firstName' onChange={fNameHandle} value={fname} placeholder='          Enter First Name*' /> <br />
+        <input type="text" className='user_firstName' id='user_firstName' onChange={fNameHandle} value={fname} placeholder='Enter First Name*' /> <br />
 
         {/* <label htmlFor="user_lastName">Last Name :</label> */}
-        <input type="text" className='user_lastName' id='user_lastName' onChange={lNameHandle} value={lname} placeholder='          Enetr Last Name*' /> <br />
+        <input type="text" className='user_lastName' id='user_lastName' onChange={lNameHandle} value={lname} placeholder='Enetr Last Name*' /> <br />
         {/* <label htmlFor="user_email">E-mail :</label> */}
-        <input type="email" className='user_email' id='user_email' onChange={emailHandle} value={email} placeholder='         Enter Email address*' /><br />
+        <input type="email" className='user_email' id='user_email' onChange={emailHandle} value={email} placeholder='Enter Email address*' /><br />
 
 
         {/* <label htmlFor="user_password">Password :</label> */}
-        <input type="password" className='user_password' id='user_password' onChange={passwordHandle} value={password} placeholder='          Enter password*' /><br />
+        <input type="password" className='user_password' id='user_password' onChange={passwordHandle} value={password} placeholder='Enter password*' /><br />
 
         {/* <label htmlFor="user_repassword">Password :</label> */}
-        <input type="password" id='user_repassword' className='user_repassword' onChange={repasswordHandle} value={repassword} placeholder='          Re-Enter Password*' /><br />
+        <input type="password" id='user_repassword' className='user_repassword' onChange={repasswordHandle} value={repassword} placeholder='Re-Enter Password*' /><br />
 
-
+        <span className='signup_error' id='signup_error'></span><br />
         <button type='submit' id='user_signupbtn' className='user_submit'>SIGNUP</button> <br />
-
-        <span className='signup_error' id='signup_error'></span>
 
       </form>
 

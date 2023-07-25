@@ -1,64 +1,122 @@
-.login_mainContainer {
+/* img.imagegoogle {
+    width: 42px;
+} */
+
+/* img.imageinstagram {
+    width: 29px;
+    margin-left: 20px;
+    margin-top: 127px;
+}
+
+img.imagetwitter {
+    width: 30px;
+    margin-left: 27px;
+    margin-top: 126px;
+} */
+button.imagegoogle {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+img.google {
+    width: 20px;
+}
+.divimages {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin-top: -125px;
+    margin-left: -581px;
 }
 
-.form_login {
-    width: 300px;
-    padding: 40px;
-    background-color: #ffffff;
-    border-radius: 25px;
-    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
-}
-
-.login {
-    display: block;
+input#email {
+    width: 385px;
+    height: 40px;
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.login_Email,
-.login_password {
-    margin-bottom: 10px;
-}
-
-.lable_email,
-.lable_password {
-    display: block;
-    font-weight: bold;
-
-    margin-bottom: 5px;
-}
-
-
-
-.email,
-.password {
-    margin-left: -11px;
-    width: 100%;
-    padding: 10px;
-   
-}
-
-.user_loginbtn {
-    width: 50%;
-    padding: 10px;
-    border-radius: 3px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
+    margin-top: 30px;
+    font-size: initial;
+    border-color: black;
     cursor: pointer;
-    margin-top: 10px;
-    margin-left: 65px;
+    border-radius: 5px;
 }
 
-#login_error {
-    display: block;
+input#password {
+    width: 385px;
+    height: 40px;
     text-align: center;
-    color: red;
-    margin-top: 10px;
+    margin-top: 40px;
+    font-size: initial;
+    border-color: black;
+    cursor: pointer;
+    border-radius: 5px;
 }
+
+.login_mainContainer{
+    margin-top: 120px;
+    margin-left: 1000px;
+}
+
+h4.headtextclass2 {
+    width: 461px;
+    margin-top: 35px;
+}
+
+h3.classcontact {
+    margin-top: 35px;
+}
+
+a.classforget {
+    color: black;
+    margin-left: 280px;
+    text-decoration: none;
+    position: absolute;
+    width: 114px;
+    margin-top: 40px;
+}
+a.classforget:hover{
+    color: blue;
+}
+
+button.user_loginbtn {
+    margin-top: 90px;
+    width: 100px;
+    height: 35px;
+    border-color: black;
+    background: #0f45b1;
+    color: white;
+    border-radius: 20px;
+    border-style: none;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.user_Signupbtn {
+    width: 165px;
+    height: 35px;
+    background-color: rgb(194, 185, 185);
+    border-color: black;
+    border-radius: 20px;
+    border-style: none;
+    font-size: medium;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 130px;
+}
+
+.classfirstlogo {
+    margin-top: -170px;
+    position: absolute;
+    margin-left: -981px;
+    width: 200px;
+}
+
+.classreception {
+    margin-top: -5px;
+    margin-left: -846px;
+    position: absolute;
+}
+
+span#login_error {
+    position: absolute;
+    color: red;
+    margin-top: 15px;
+}
+
