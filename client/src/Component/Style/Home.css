@@ -1,3 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
-
-  
+.second-container{
+    /* background-color: rgba(2, 77, 250, 0.919); */
+    background-color: #0546fa;
+}
+/* img.classimagelogo {
+    width: 110px;
+    margin-left: 30px;
+    margin-top: 5px;
+    mix-blend-mode: color-burn;
+} */
+.navdiv {
+    position: absolute;
+    margin-top: -33px;
+    margin-left: 1000px;
+}
+button.homebtn {
+    width: 70px;
+    height: 30px;
+    font-size: larger;
+    margin-top: -5px;
+    border-style: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+button.Aboutbtn {
+    margin-left: 50px;
+    width: 79px;
+    height: 30px;
+    font-size: larger;
+    margin-top: -5px;
+    border-style: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+button.Contactbtn {
+    margin-left: 50px;
+    width: 95px;
+    height: 30px;
+    font-size: larger;
+    margin-top: -5px;
+    border-style: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.servicebtn{
+    margin-left: 50px;
+    width: 79px;
+    height: 30px;
+    font-size: larger;
+    margin-top: -5px;
+    border-style: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+img.classimage {
+    margin-top: 125px;
+    margin-left: 575px;
+    width: 2117px;
+    height: 661px;
+}
+.classcontent {
+    align-content: flex-start;
+    margin-top: -500px;
+    width: 500px;
+    margin-left: 852px;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3), rgba(0,0,0,0.2));
+}

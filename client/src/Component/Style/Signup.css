@@ -3,12 +3,13 @@ form.signup_form {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: baseline;
-    margin-top: 70px;
-    margin-left: 890px;
+    margin-top: 78px;
+    margin-left: 921px;
 }
 
 h3.classignup {
     width: 484px;
+    margin-top: 20px;
 }
 input#user_firstName {
     margin-top: 20px;
@@ -77,12 +78,16 @@ button#user_signupbtn {
 span#signup_error {
     color: red;
     position: absolute;
-    margin-top: 470px;
+    margin-top: 440px;
 }
 img.classmainlogo {
     position: absolute;
     width: 200px;
-    margin-left: -870px;
+    margin-left: -895px;
     margin-top: -165px;
 }
-
+img.classimages2 {
+    margin-left: -830px;
+    position: absolute;
+    margin-top: -32px;
+}

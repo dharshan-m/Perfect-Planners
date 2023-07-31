@@ -8,14 +8,18 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import App from './App';
 import Login from './Component/Login';
 import Home from './Component/Home';
-// import Newuser from './Component/Signup';
 import Signup from './Component/Signup';
+import Navbar from './Component/Navbar';
+// import Nav from './Component/Nav';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
 
     <Routes>
       <Route path='/' Component={App} />
+      {/* <Route path='/hel' component={Nav}/> */}
+      <Route path='/navbar' Component={Navbar}/>
       <Route path='/login' Component={Login}/>
       <Route path='/home' Component={Home}/>
       <Route path='/signup' Component={Signup}/>

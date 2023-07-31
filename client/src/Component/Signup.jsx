@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import Images from '../Component/Images/signupimage.jpeg';
 
 import './Style/Signup.css'
 
@@ -57,7 +58,7 @@ function Signup() {
   const validatePassword = (password) => {
     if(password.length===0)
     {
-      alert("Enetr the password")
+      alert("Enetr the password");
     }
     return password.length >= 8;
   }
@@ -130,9 +131,9 @@ function Signup() {
         <div className='firstlogo'>
           <img className='classmainlogo' src="https://document-export.canva.com/W2I7I/DAFe7hW2I7I/21/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20230723%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230723T132516Z&X-Amz-Expires=15668&X-Amz-Signature=81e31c0c8657011553b3e1e1b1069ddcfec726705fe1d95da1be023619b9eee8&X-Amz-SignedHeaders=host&response-expires=Sun%2C%2023%20Jul%202023%2017%3A46%3A24%20GMT" alt="logo" />
         </div>
-        {/* <div className='divimage2main'>
-          <img src="https://fr.dreamstime.com/file-d-attente-%C3%A0-l-illustration-plate-vecteur-r%C3%A9ception-les-gens-qui-attendent-ligne-des-personnages-dessins-anim%C3%A9s-image168509664" alt="" />
-        </div> */}
+        <div className='divimage2main'>
+          <img src={Images} alt="classimages2" className='classimages2' />
+        </div>
         <div className='divsignup'>
           <h3 className='classignup'>Join our community and unlock a world of possibilities! SignUp today to get started with a personalized account.</h3>
         </div>
