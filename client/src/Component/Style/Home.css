@@ -6,9 +6,12 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+
 .second-container{
     /* background-color: rgba(2, 77, 250, 0.919); */
-    background-color: #767777;
+    /* background-color: #767777; */
+    /* background-color: #23374D; */
+    background-color: #123C69;
 }
 
 .navdiv {
@@ -22,11 +25,14 @@ button.homebtn {
     width: 70px;
     height: 30px;
     font-size: larger;
-    margin-top: -5px;
+    margin-top: -22px;
     border-style: none;
     background: none;
     color: white;
     cursor: pointer;
+}
+button.homebtn:hover{
+    color: #FFECB3;
 }
 button.Aboutbtn {
     margin-left: 50px;
@@ -73,7 +79,7 @@ img.classimage {
     width: 500px;
     margin-left: 852px;
     color: white;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3), rgba(0,0,0,0.2));
+    /* background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3), rgba(0,0,0,0.2)); */
 }
 .divinput {
     margin-top: -125px;
@@ -83,7 +89,9 @@ img.classimage {
     margin-top: 500px;
 }
 .color-container {
-    background: #767777;
+    /* background: #767777; */
+    /* background-color: #23374D; */
+    background-color: #123;
     width: 1536px;
     height: 195px;
     margin-top: -188px;
@@ -130,11 +138,14 @@ input.inputDate {
     border-style: none;
     font-size: larger;
     cursor: pointer;
+    background-color: white;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 .buttonsearch:hover{
-    background-color: black;
+    /* background-color: black; */
+    /* background-color: #1B2A3A; */
+    background-color: #2C475F;
     color: white;
 }
 .about-container{
@@ -149,4 +160,15 @@ p.about-paragraph {
     position: absolute;
     margin-top: 92px;
     font-family: math;
+}
+.classprofilelogo {
+    width: 34px;
+    border-radius: 20px;
+    z-index: 1;
+}
+.divprofile {
+    margin-top: -152px;
+    margin-left: -13px;
+    margin-left: -84px;
+    z-index: 2;
 }

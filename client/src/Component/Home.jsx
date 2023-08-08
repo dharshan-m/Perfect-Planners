@@ -1,6 +1,7 @@
 import React from "react";
 import './Style/Home.css';
 import Images from '../Component/Images/homeimage1.png';
+import image2 from '../Component/Images/profilelogo.png';
 // import {useNavigate } from "react-router-dom";
 
 const Home =() => {
@@ -37,6 +38,9 @@ const Home =() => {
                         <button className="Aboutbtn">About Us</button>
                         <button className="servicebtn">Service</button>
                         <button className="Contactbtn">Contact Us</button>
+                        <div className="divprofile">
+                            <img src={image2} alt="profilelogo" className="classprofilelogo" />
+                        </div>
                     </div>
                 </div>
             </div>
