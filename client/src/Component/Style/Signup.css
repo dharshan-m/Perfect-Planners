@@ -3,17 +3,17 @@ form.signup_form {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: baseline;
-    margin-top: 78px;
-    margin-left: 921px;
+    margin-top: 45px;
+    margin-left: 990px;
 }
 
 h3.classignup {
-    width: 484px;
+    width: 400px;
     margin-top: 20px;
 }
 input#user_firstName {
     margin-top: 20px;
-    width: 440px;
+    width: 380px;
     height: 35px;
     text-align: center;
     font-size: initial;
@@ -23,7 +23,7 @@ input#user_firstName {
 }
 input#user_lastName {
     margin-top: 10px;
-    width: 440px;
+    width: 380px;
     height: 35px;
     text-align: center;
     font-size: initial;
@@ -33,7 +33,7 @@ input#user_lastName {
 }
 input#user_email {
     margin-top: 10px;
-    width: 440px;
+    width: 380px;
     height: 35px;
     text-align: center;
     font-size: initial;
@@ -43,7 +43,7 @@ input#user_email {
 }
 input#user_password {
     margin-top: 10px;
-    width: 440px;
+    width: 380px;
     height: 35px;
     text-align: center;
     font-size: initial;
@@ -53,7 +53,7 @@ input#user_password {
 }
 input#user_repassword {
     margin-top: 10px;
-    width: 440px;
+    width: 380px;
     height: 35px;
     text-align: center;
     font-size: initial;
@@ -63,10 +63,18 @@ input#user_repassword {
 }
 span.signup_log {
     font-size: xx-large;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
+
 button#user_signupbtn {
     margin-top: 20px;
-    width: 175px;
+    width: 155px;
     height: 40px;
     border-style: none;
     border-radius: 20px;
@@ -78,16 +86,16 @@ button#user_signupbtn {
 span#signup_error {
     color: red;
     position: absolute;
-    margin-top: 440px;
+    margin-top: 485px;
 }
 img.classmainlogo {
     position: absolute;
     width: 200px;
-    margin-left: -895px;
-    margin-top: -165px;
+    margin-left: -960px;
+    margin-top: -175px;
 }
 img.classimages2 {
-    margin-left: -830px;
+    margin-left: -870px;
     position: absolute;
-    margin-top: -32px;
+    margin-top: -10px;
 }

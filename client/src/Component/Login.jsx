@@ -4,7 +4,8 @@ import React from 'react'
 import './Style/Login.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import Images from '../Component/Images/Perfect Planners.png';
+import loginImage from '../Component/Images/login_image.jpg';
 function Login() {
 
     const Navigate = useNavigate();
@@ -77,10 +78,10 @@ function Login() {
                 <form action="" id='form_login' className='form_login' onSubmit={handleSubmit}>
                     <span className="login"></span>
                     <div className='firstlogo'>
-                        <img className='classfirstlogo' src="https://document-export.canva.com/W2I7I/DAFe7hW2I7I/21/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20230723%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230723T132516Z&X-Amz-Expires=15668&X-Amz-Signature=81e31c0c8657011553b3e1e1b1069ddcfec726705fe1d95da1be023619b9eee8&X-Amz-SignedHeaders=host&response-expires=Sun%2C%2023%20Jul%202023%2017%3A46%3A24%20GMT" alt="logo" />
+                        <img className='classfirstlogo' src={Images} alt="logo" />
                     </div>
                     <div className='divcontainer'>
-                        <img className='classreception' src="https://media.istockphoto.com/id/955148182/vector/customer-at-reception-young-woman-receptionist-standing-at-reception-desk-modern-vector.jpg?s=612x612&w=0&k=20&c=a-AljhO_GF9STsyajEkZIFNHOMhUwjtdooYLJQZMQec=" alt="images" />
+                        <img className='classreception' src={loginImage} alt="images" />
                     </div>
                     <div className='div content'>
                         <h1 className='headtextclass'>Welcome Back!</h1>

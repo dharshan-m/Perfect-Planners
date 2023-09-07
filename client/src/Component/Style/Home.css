@@ -6,6 +6,15 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+element.style {
+    color: white;
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+.first-container{
+    z-index: 1;
+}
 
 .second-container{
     /* background-color: rgba(2, 77, 250, 0.919); */
@@ -75,11 +84,10 @@ img.classimage {
 }
 .classcontent {
     align-content: flex-start;
-    margin-top: -500px;
+    margin-top: -430px;
     width: 500px;
     margin-left: 852px;
     color: white;
-    /* background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3), rgba(0,0,0,0.2)); */
 }
 .divinput {
     margin-top: -125px;
@@ -94,9 +102,9 @@ img.classimage {
     background-color: #123;
     width: 1536px;
     height: 195px;
-    margin-top: -188px;
+    margin-top: -258px;
 }
-input.inputdistrict {
+select.inputdistrict {
     width: 250px;
     height: 72px;
     text-align: center;
@@ -107,7 +115,8 @@ input.inputdistrict {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-input.inputfunction {
+
+select.inputfunction {
     /* position: absolute; */
     margin-left: 2px;
     width: 250px;
@@ -159,16 +168,20 @@ p.about-paragraph {
     margin-left: 230px;
     position: absolute;
     margin-top: 92px;
+    margin-left: 280px;
     font-family: math;
 }
 .classprofilelogo {
     width: 34px;
     border-radius: 20px;
-    z-index: 1;
+    margin-top: -7px;
+    margin-left: 445px;
+    z-index: 2;
 }
 .divprofile {
-    margin-top: -152px;
+    margin-top: -127px;
     margin-left: -13px;
-    margin-left: -84px;
-    z-index: 2;
+    margin-left: -119px;
+    /* position: fixed; */
+    /* z-index: 2; */
 }
